@@ -154,6 +154,7 @@ html, body{
   margin: 0 !important;
 
   font-size: 1em;
+  transform: translateY(10px);
 }
 
 @media (max-width: 640px) {
