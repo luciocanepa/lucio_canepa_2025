@@ -61,7 +61,7 @@ function App() {
 
           <div>
             <Github color="white"/>
-            <a href="https://github.com/lucio_canepa06" target="_blank">GitHub</a>
+            <a href="https://github.com/luciocanepa" target="_blank">GitHub</a>
           </div>
         </div>
 
