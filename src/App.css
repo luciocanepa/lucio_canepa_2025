@@ -65,7 +65,7 @@ html, body{
   position: relative;
   font-size: 2em;
   margin: 0;
-  padding-left: 1.5em; /* Increased padding to make space for the rectangle */
+  padding-left: 1em;
   box-sizing: border-box;
   border-bottom: 2px solid white;
 
@@ -82,24 +82,59 @@ html, body{
   background-color: rgb(255, 106, 0);
 }
 
-.Box p{
+.Box-content{
   width: calc(60vw - 4em);
-  margin: 0.5em 2em 0 2em;
-
+  margin: 2em auto;
   text-align: justify;
 }
 
-.Box p:last-child{
-  margin-bottom: 2em;
+#box-border{
+  border-top: 2px solid rgb(74, 74, 74);
+  padding-top: 1em;
 }
+
+.Box-content p{
+  margin: 0.5em 0;
+}
+
+/* .Box p{
+  width: calc(60vw - 4em);
+  margin: 0.5em 0 0 2em;
+
+  
+} */
+
+/* .Box p:last-child{
+  margin-bottom: 2em;
+} */
 
 #bold{
   font-weight: bold;
-  margin-top: 2em;
+  max-width: 40vw;
+  margin: 0;
 }
 
 .Skills-first-p{
   margin-top: 2em !important;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+#date{
+  width: fit-content;
+  font-size: 0.8em;
+  margin: 0;
+  margin-left: 0;
+  padding: 4px;
+  background-color: rgba(129, 129, 129, 0.085);
+  color: rgb(220, 220, 220);
+  border-radius: 4px;
 }
 
 /* #Links{
@@ -110,21 +145,22 @@ html, body{
   align-items: flex-start;
 } */
 
-#Links div{
+.links-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.links-container div{
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-
-  margin: 1em auto 1em 2em;
 }
 
-#Links svg{
-  position: relative;
-  bottom: 3px;
-  margin-right: 1em;
-}
-
-#Links a{
+.links-container a, p{
+  width: fit-content !important;
   text-decoration: none;
   color: white;
 
@@ -134,7 +170,6 @@ html, body{
 #Links div a:hover{
   cursor: pointer;
   color: rgb(255, 106, 0);
-  text-decoration: underline;
 }
 
 .copy{
